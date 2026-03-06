@@ -1,22 +1,22 @@
-import bushAmour from "../imagenes/productos/detalleProductos/bushAmour.png";
+import bushAmour from "../imagenes/productos/detalleProductos/bushAmour.webp";
 import bushAmourPrincipal from "../imagenes/productos/detalleProductos/bushAmourPrincipal.jpg";
 import bushAmour1 from "../imagenes/productos/detalleProductos/bushAmour1.webp";
 import bushAmour2 from "../imagenes/productos/detalleProductos/bushAmour2.webp";
 import bushAmour3 from "../imagenes/productos/detalleProductos/bushAmour3.webp";
 
-import grandAmour from "../imagenes/productos/detalleProductos/grandAmour.png";
+import grandAmour from "../imagenes/productos/detalleProductos/grandAmour.webp";
 import grandAmourPrincipal from "../imagenes/productos/detalleProductos/grandAmourPrincipal.webp";
 import grandAmour1 from "../imagenes/productos/detalleProductos/grandAmour1.webp";
 import grandAmour2 from "../imagenes/productos/detalleProductos/grandAmour2.webp";
 import grandAmour3 from "../imagenes/productos/detalleProductos/grandAmour3.webp";
 
-import rouge from "../imagenes/productos/detalleProductos/rouge.png";
+import rouge from "../imagenes/productos/detalleProductos/rouge.webp";
 import rougePrincipal from "../imagenes/productos/detalleProductos/rougePrincipal.webp";
 import rouge1 from "../imagenes/productos/detalleProductos/rouge1.webp";
 import rouge2 from "../imagenes/productos/detalleProductos/rouge2.webp";
 import rouge3 from "../imagenes/productos/detalleProductos/rouge3.webp";
 
-import bunny from "../imagenes/productos/detalleProductos/bunny.png";
+import bunny from "../imagenes/productos/detalleProductos/bunny.webp";
 import bunnyBlancoPrincipal from "../imagenes/productos/detalleProductos/bunnyBlancoPrincipal.webp";
 import bunnyBlanco1 from "../imagenes/productos/detalleProductos/bunnyBlanco1.webp";
 import bunnyBlanco2 from "../imagenes/productos/detalleProductos/bunnyBlanco2.webp";

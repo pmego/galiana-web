@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import HeroSlide from "./HeroSlide";
 
 import bg from "../../assets/imagenes/productos/CarruselLista/bg_carrusel2.jpg"
-import img1 from "../../assets/imagenes/productos/CarruselLista/img_carrusel1.png";
-import img2 from "../../assets/imagenes/productos/CarruselLista/img_carrusel2.png";
-import img3 from "../../assets/imagenes/productos/CarruselLista/img_carrusel3.png";
+import img1 from "../../assets/imagenes/productos/CarruselLista/img_carrusel1.webp";
+import img2 from "../../assets/imagenes/productos/CarruselLista/img_carrusel2.webp";
+import img3 from "../../assets/imagenes/productos/CarruselLista/img_carrusel3.webp";
 const slides = [
   {
     id: 1,
