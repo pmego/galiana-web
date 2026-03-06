@@ -73,7 +73,7 @@ function ProductoDetalle() {
                                     </span>
 
                                     {/* BLANCO */}
-                                    <div className="flex items-center gap-2">
+                                    <div className="flex items-center gap-2 text-secondary">
                                         <span>Blanco</span>
                                         <button
                                             onClick={() => setSearchParams({ color: "blanco" })}
@@ -86,7 +86,7 @@ function ProductoDetalle() {
                                     </div>
 
                                     {/* ROSADO */}
-                                    <div className="flex items-center gap-2">
+                                    <div className="flex items-center gap-2 text-secondary">
                                         <span>Rosado</span>
                                         <button
                                             onClick={() => setSearchParams({ color: "rosado" })}
