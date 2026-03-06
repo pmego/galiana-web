@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "Cornella";
+  src: url("./assets/fonts/cornella-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Color Principal */
+  --color-primary: #bf435b;
+
+  /* Colores / fondos -> claros */
+  --color-surface: #F1EBDF;
+  --color-soft: #f9dce3;
+
+  /* GRIS */
+  --color-sand: #f1ebdf;
+
+  /* BACKGROUND */
+  --color-background: #F5F5F5;
+
+  /* contraste (Verde) */
+  --color-secondary: #4e5f4a;
+  --color-muted: #b0c096;
+
+
+
+  /* Fuente para todos los textos */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  /* fuente para títulos */
+  --font-cornelia: "Cornella", serif;
+
+}
+
+@utility font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+@utility font-poppins {
+  font-family: var(--font-poppins);
+}
+
+@utility font-inter {
+  font-family: var(--font-sans);
+}
+
+body {
+  background: #F5F5F5;
+}
+
+/* ANIMACIÓN DEL TOP BANNER */
+
+@keyframes slideContainer {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-banner {
+  animation: slideContainer 25s linear infinite;
+}
+
+.animate-banner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes imageIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animate-imageIn {
+  animation: imageIn 1.5s ease-out;
+}
+
+/* Texto entra con leve fade y subida */
+@keyframes textIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-textIn {
+  animation: textIn 1.5s ease-out;
+}
