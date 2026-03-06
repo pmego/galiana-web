@@ -54,7 +54,7 @@ export default function HeroSlide({ slide }) {
 
           <div className="md:flex-row md:flex justify-between flex-col">
             <NavLink
-              to="/productos"
+              to={`/productos/${slide.slug}`}
               className="mt-8 bg-primary border-2 border-white md:border-none hover:opacity-70 font-montserrat text-white px-8 py-3 rounded-xl transition duration-700 cursor-pointer"
             >
               <span>Ver Colección</span>

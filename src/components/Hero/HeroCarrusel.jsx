@@ -9,6 +9,7 @@ const slides = [
   {
     id: 1,
     bg: bg,
+    slug: "rouge",
     image: img1,
     title: "Momentos que Florecen",
     subtitle: {
@@ -22,6 +23,7 @@ const slides = [
   {
     id: 2,
     bg: bg,
+    slug: "grand_amour",
     image: img2,
     title: "Temporada de Lanzamiento",
     subtitle: {
@@ -35,6 +37,7 @@ const slides = [
   {
     id: 3,
     bg: bg,
+    slug: "bush_amour",
     image: img3,
     title: "Sorprende hoy mismo",
     subtitle: {
