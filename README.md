@@ -1,16 +1,62 @@
-# React + Vite
+🌸 Florería Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web informativo para una florería, desarrollado con React y Vite.
+La página presenta los productos disponibles, información del negocio y medios de contacto.
 
-Currently, two official plugins are available:
+🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+· React
 
-## React Compiler
+· React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+· Vite
 
-## Expanding the ESLint configuration
+· Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+· React Icons
+
+📸 Características
+
+· Diseño moderno y responsive
+
+· Navegación SPA con React Router
+
+· Carrusel de productos
+
+· Animaciones y efectos hover
+
+· Botón de contacto por WhatsApp
+
+📂 Estructura del proyecto
+
+src/
+components/
+pages/
+assets/
+data/
+
+🛠 Instalación:
+
+Clonar el repositorio:
+
+git clone https://github.com/pmego/floreria-web.git
+
+Entrar a la carpeta del proyecto:
+
+cd floreria-web
+
+Instalar dependencias:
+
+npm install
+
+Ejecutar el proyecto:
+
+npm run dev
+
+🌐 Demo
+
+Próximamente disponible.
+
+📌 Autor
+
+Desarrollado por Paolo Mego
