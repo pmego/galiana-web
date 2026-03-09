@@ -55,7 +55,7 @@ npm run dev
 
 🌐 Demo
 
-Próximamente disponible.
+http://galiana.pe/
 
 📌 Autor
 
