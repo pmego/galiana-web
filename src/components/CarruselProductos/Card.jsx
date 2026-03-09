@@ -38,7 +38,7 @@ function Card({ producto }) {
                 onClick={() => navigate(`/productos/${producto.slug}`)}
                 className="text-base mt-8 inline-flex font-montserrat items-center gap-2 font-semibold bg-primary text-white px-10 py-5 rounded-2xl text-md hover:scale-102 transition duration-700 cursor-pointer"
             >
-                Ver Colección
+                Ver más
             </button>
         </article>
     )

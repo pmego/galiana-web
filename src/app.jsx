@@ -14,11 +14,12 @@ import TopBanner from "./components/TopBanner/TopBanner";
 import CintaDecorativa from "./components/CintaDecorativa/CintaDecorativa";
 import Beneficios from "./components/Beneficios/Beneficios";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes/PreguntasFrecuentes";
-
+import WhatsappButton from "./components/BotonWhatsapp/BotonWhatsapp";
 
 function Home() {
     return (
         <>
+            <WhatsappButton />
             <Nosotros />
             <CarruselProductos productos={productos} />
             <CintaDecorativa />
@@ -60,7 +61,6 @@ function App() {
         <>
             <TopBanner />
             <Header />
-
 
             <ScrollToTop />
 

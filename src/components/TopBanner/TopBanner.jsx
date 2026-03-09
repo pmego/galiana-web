@@ -8,7 +8,9 @@ function TopBanner() {
                 <div className="min-w-full flex justify-center items-center whitespace-nowrap text-gray-400 text-xs md:text-sm tracking-wide md:tracking-widest px-4">
                     Flores frescas para momentos inolvidables —
                     <a
-                        href="https://wa.me/51926955567"
+                        href={`https://wa.me/51926955567?text=${encodeURIComponent(
+                            `Hola, quiero comprar un ramo para alguien especial`
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary font-medium mx-2 hover:opacity-80 transition"

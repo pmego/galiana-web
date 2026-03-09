@@ -258,6 +258,7 @@ function ProductoDetalle() {
             <CarruselProductos 
             productos={productosRecomendados} 
             mostrarFlechas={false}
+            mostrarTitulo={false}
             />
         </>
     )

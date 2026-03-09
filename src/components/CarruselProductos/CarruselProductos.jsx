@@ -5,7 +5,7 @@ import useVisibleCards from '../../hooks/useVisibleCards';
 import useSwipe from "../../hooks/useSwipe";
 import useIsMobile from "../../hooks/useIsMobile";
 
-function CarruselProductos({ productos, mostrarFlechas = true }) {
+function CarruselProductos({ productos, mostrarFlechas = true, mostrarTitulo = true }) {
 
     const [index, setIndex] = useState(0);
     const visibleCards = Math.min(useVisibleCards(), 3);
@@ -38,17 +38,21 @@ function CarruselProductos({ productos, mostrarFlechas = true }) {
         if (!isMobile) return;
 
         const interval = setInterval(() => {
-            next();
+            setIndex(prev => prev >= maxIndex ? 0 : prev + 1);
         }, 3000);
-        return () => clearInterval(interval)
-    }, [isMobile, index])
+
+        return () => clearInterval(interval);
+    }, [isMobile, maxIndex]);
 
     return (
         <>
             <section className="relative max-w-6xl mx-auto mb-20">
-                <h2 className="text-xl md:text-3xl text-center md:text-left md:pl-5 text-secondary font-cornelia tracking-wide mb-8">
-                    NUESTRA COLECCIÓN
-                </h2>
+                {mostrarTitulo && (
+                    <h2 className="text-xl md:text-3xl text-center md:text-left md:pl-5 text-secondary font-cornelia tracking-wide mb-8">
+                        NUESTRA COLECCIÓN
+                    </h2>
+                )}
+
                 {/* Izquierda */}
                 {mostrarFlechas && (
                     <button

@@ -25,32 +25,21 @@ function Header() {
 
                 {/* Menú */}
                 <ul className="hidden md:flex items-center gap-10 text-md font-bold tracking-wide font-montserrat">
-                    <li className="border-primary pr-5">
+                    <li className="relative group pr-5">
                         <NavLink
                             to="/"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "text-primary font-bold transition-all duration-700"
-                                    : "text-primary/30 transition-all duration-700"
-                            }
+                            className="text-primary font-bold"
                         >
                             Home
-
                         </NavLink>
 
+                        <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-primary scale-x-0 origin-left transition-transform duration-1000 ease-out group-hover:scale-x-100"></span>
                     </li>
-                    <div className="hidden md:block w-0.5 h-4 bg-primary mx-6"></div>
-
-                    <li className="flex items-center justify-center">
-
+                
+                    <li className="relative group flex items-center justify-center">
                         <NavLink
                             to="/productos"
-                            className={({ isActive }) =>
-                                `flex items-center gap-1 transition-all duration-500 ${isActive
-                                    ? "opacity-100 text-primary font-bold"
-                                    : "opacity-20 text-primary"
-                                }`
-                            }
+                            className="flex items-center gap-1 text-primary font-bold"
                         >
                             <img
                                 src={bolso}
@@ -59,6 +48,8 @@ function Header() {
                             />
                             <span>Nuestra colección</span>
                         </NavLink>
+
+                        <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-primary scale-x-0 origin-left transition-transform duration-1000 ease-out group-hover:scale-x-110"></span>
                     </li>
                 </ul>
 
@@ -77,7 +68,7 @@ function Header() {
 
             {/* MENÚ MOBILE */}
             <div
-                className={`md:hidden bg-white shadow-lg transition-all duration-1500 overflow-hidden ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                className={`md:hidden bg-white shadow-lg transition duration-1000 overflow-hidden ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                     }`}
             >
                 <ul className="flex flex-col items-center gap-6 py-6 text-lg font-semibold text-primary">
@@ -92,7 +83,7 @@ function Header() {
                             <img
                                 src={bolso}
                                 alt="ícono colección"
-                                className="w-5 h-5"
+                                className="w-6 h-4"
                             />
                             Nuestra Colección
                         </NavLink>
