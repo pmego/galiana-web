@@ -15,6 +15,7 @@ import CintaDecorativa from "./components/CintaDecorativa/CintaDecorativa";
 import Beneficios from "./components/Beneficios/Beneficios";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes/PreguntasFrecuentes";
 import WhatsappButton from "./components/BotonWhatsapp/BotonWhatsapp";
+import WspBotonVerde from "./components/WspBotonVerde/WspBotonVerde";
 
 function Home() {
     return (
@@ -93,7 +94,6 @@ function App() {
                     />
                 </Routes>
             </AnimatePresence>
-
             <Footer />
         </>
     )
