@@ -15,7 +15,7 @@ function WhatsappButton() {
             items-center gap-2
             bg-primary text-white
             px-3 py-4 md:px-5 md:py-3
-            rounded-l-2xl md:rounded-l-full
+            rounded-l-4xl md:rounded-l-full
             shadow-lg hover:bg-primary/80 transition
             "
         >
