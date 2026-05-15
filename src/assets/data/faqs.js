@@ -43,7 +43,7 @@ const faqs = [
         id: 7,
         pregunta: "¿Se puede recoger el pedido en tienda física?",
         respuesta:
-            `Por el momento, operamos xclusivamente de manera online 
+            `Por el momento, operamos exclusivamente de manera online 
         enfocada en el servicio a domicilio. Esto nos permite garantizar que cada arreglo
         se prepare bajo pedido con la máxima frescura justo antes de salir a su destino`
     }
