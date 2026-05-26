@@ -124,12 +124,40 @@ function ProductoDetalle() {
                     </div>
 
                     {/* ===== DERECHA: INFO ===== */}
-                    <div className="flex flex-col justify-center px-4 max-w-lg">
+                    <div className="flex flex-col justify-center px-4 max-w-lg text-center md:text-left mx-auto md:mx-0 mb-7 md:mb-0 -mt-15">
 
                         {/* NOMBRE */}
-                        <h1 className="text-4xl lg:text-8xl font-cornelia uppercase text-primary mb-6 max-w-3xs">
+                        <h1 className="text-4xl lg:text-8xl font-cornelia uppercase text-primary mb-6 md:max-w-3xs">
                             {producto.nombre}
                         </h1>
+
+                        {/* COLORES */}
+                        {tieneVariantes && (
+                            <div className="flex items-center gap-4 mb-6">
+
+                                <span className="text-primary font-medium">
+                                    Color:
+                                </span>
+
+                                {Object.keys(producto.colores).map((nombreColor) => (
+                                    <button
+                                        key={nombreColor}
+                                        onClick={() =>
+                                            setSearchParams({ color: nombreColor })
+                                        }
+                                        className={`
+                                                px-4 py-2 rounded-xl border transition duration-300 capitalize cursor-pointer
+                                                ${colorActivo === nombreColor
+                                                ? "bg-primary text-white border-primary"
+                                                : "bg-white text-primary border-primary hover:bg-primary hover:text-white"
+                                            }
+                `}
+                                    >
+                                        {nombreColor}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
 
                         {/* PRECIO */}
                         <div className="flex items-center gap-4 mb-6 font-montserrat">
@@ -166,8 +194,8 @@ function ProductoDetalle() {
                     </div>
                 </div>
 
-                {/* ===== ACCORDIONS ===== */}
-                <div className="bg-background">
+                {/* DESCRIPCIÓN Y DETALLES */}
+                <div className="bg-background px-5 2xl:px-0">
                     <div className="max-w-7xl mx-auto">
 
                         {/* DESCRIPCIÓN */}
@@ -239,15 +267,15 @@ function ProductoDetalle() {
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6 text-secondary">
 
                                             {dataProducto.detalles?.map((item, i) => (
-                                                    <div key={i}>
-                                                        {/* <p className="font-medium">
+                                                <div key={i}>
+                                                    {/* <p className="font-medium">
                                                             {item.label}
                                                         </p> */}
 
-                                                        <p className="font-light">
-                                                            {item.value}
-                                                        </p>
-                                                    </div>
+                                                    <p className="font-light">
+                                                        {item.value}
+                                                    </p>
+                                                </div>
                                             ))}
                                         </div>
                                     </motion.div>

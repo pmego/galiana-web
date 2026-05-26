@@ -26,16 +26,11 @@ function Experiencia() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
 
                     {/* CARD IZQUIERDA */}
-                    <div className="border-2 border-primary rounded-xl p-14 flex items-center min-h-107.5 px-30">
+                    <div
+                        className="border-2 border-primary rounded-xl p-8 sm:p-10 lg:p-14 flex items-center min-h-75 lg:min-h-107.5 px-6 sm:px-10 lg:px-20"
+                    >
                         <h3
-                            className="
-                text-primary
-                uppercase
-                text-5xl
-                leading-none
-                font-cornelia
-                max-w-md
-              "
+                            className="text-primary uppercase text-3xl sm:text-4xl lg:text-5xl leading-none font-cornelia max-w-full lg:max-w-md"
                         >
                             Diseños sofisticados, frescos y listos para impresionar
                         </h3>

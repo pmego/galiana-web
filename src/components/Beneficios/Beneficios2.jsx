@@ -5,7 +5,7 @@ import pago from "../../assets/imagenes/icons/beneficios/pago.png";
 
 export default function Beneficios2() {
     return (
-        <section className="py-16 font-montserrat">
+        <section className="py-16 font-montserrat px-5 xl:px-0">
             <div className="bg-background/98 max-w-7xl mx-auto rounded-3xl px-8 py-5 border border-gray-300">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
 

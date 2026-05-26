@@ -30,43 +30,50 @@ export default function ListaProductos() {
             <HeroCarrusel2 />
 
             {/* SUBMENU */}
-           <div className="relative z-20 w-full bg-white shadow-[0_8px_20px_rgba(0,0,0,0.06)]">
-                <div className="max-w-400 mx-auto px-8">
-                    <div className="flex items-center justify-center lg:justify-between h-21.25 text-[11px] uppercase tracking-[0.2em]">
+            <div className="relative z-20 w-full bg-white shadow-[0_8px_20px_rgba(0,0,0,0.06)]">
 
-                        <span className="text-gray-400 hidden lg:block">
+                <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8">
+
+                    <div className="flex items-center justify-start lg:justify-center gap-6 md:gap-8 lg:gap-14 xl:gap-18 h-17.5 overflow-x-auto scrollbar-hide whitespace-nowrap">
+
+                        {/* TEXTO */}
+                        <span className="hidden lg:block text-gray-400 uppercase tracking-[0.2em] text-[11px] shrink-0">
                             Categorías:
                         </span>
 
-                        {categorias.map((categoria) => (
-                            <button
-                                key={categoria.id}
-                                onClick={() => setCategoriaActiva(categoria.id)}
-                                className={`
-                                    relative py-2 transition duration-300
-                                    hover:text-[#C74765] cursor-pointer
-                                    ${categoriaActiva === categoria.id
-                                        ? "text-[#C74765] font-semibold"
-                                        : "text-[#57614c]"
-                                    }
-                                `}
-                            >
-                                {categoria.label}
+                        {/* BOTONES */}
+                        <div className="flex items-center gap-6 md:gap-8 lg:gap-10 xl:gap-12 shrink-0">
 
-                                {/* Línea animada */}
-                                {categoriaActiva === categoria.id && (
-                                    <motion.span
-                                        layoutId="underline"
-                                        className="absolute left-0 -bottom-1 h-0.5 w-full bg-[#C74765]"
-                                        transition={{
-                                            type: "spring",
-                                            stiffness: 300,
-                                            damping: 30,
-                                        }}
-                                    />
-                                )}
-                            </button>
-                        ))}
+                            {categorias.map((categoria) => (
+                                <button
+                                    key={categoria.id}
+                                    onClick={() => setCategoriaActiva(categoria.id)}
+                                    className={`
+                            relative py-2 uppercase transition duration-300 hover:text-[#C74765] cursor-pointer whitespace-nowrap text-[10px] sm:text-[11px] md:text-[10px] lg:text-[11px] tracking-[0.12em] md:tracking-[0.15em] lg:tracking-[0.2em]
+
+                            ${categoriaActiva === categoria.id
+                                            ? "text-[#C74765] font-semibold"
+                                            : "text-[#57614c]"
+                                        }
+                        `}
+                                >
+                                    {categoria.label}
+
+                                    {/* LÍNEA */}
+                                    {categoriaActiva === categoria.id && (
+                                        <motion.span
+                                            layoutId="underline"
+                                            className="absolute left-0 -bottom-1 h-0.5 w-full bg-[#C74765]"
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: 300,
+                                                damping: 30,
+                                            }}
+                                        />
+                                    )}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

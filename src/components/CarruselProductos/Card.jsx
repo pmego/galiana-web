@@ -8,7 +8,9 @@ function Card({ producto }) {
 
     return (
         <article className="w-full max-w-90 p-2">
-            <div className="bg-white border border-primary overflow-hidden transition rounded-xl duration-500 hover:scale-[1.02] origin-center">
+            <div
+                onClick={() => navigate(`/productos/${producto.slug}`)}
+                className="bg-white border border-primary overflow-hidden transition rounded-xl duration-500 hover:-translate-y-2 origin-center cursor-pointer">
 
                 {/* Contenedor imagen */}
                 <div className="relative">
@@ -64,7 +66,7 @@ function Card({ producto }) {
                 onClick={() =>
                     navigate(`/productos/${producto.slug}`)
                 }
-                className="w-full text-sm bg-primary text-white py-2 mt-2 tracking-[0.2em] rounded-xl uppercase underline underline-offset-4 font-semibold hover:scale-[1.02] transition cursor-pointer font-poppins"
+                className="w-full text-sm bg-primary text-white py-2 mt-2 tracking-[0.2em] rounded-xl uppercase underline underline-offset-4 font-semibold hover:scale-[1.02] transition duration-500 cursor-pointer font-poppins"
             >
                 Comprar
             </button>

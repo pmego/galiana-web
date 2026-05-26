@@ -39,7 +39,7 @@ import aura2 from "../imagenes/productos/detalleProductos/aura2.webp";
 import aura3 from "../imagenes/productos/detalleProductos/aura3.webp";
 
 import rubi from "../imagenes/productos/detalleProductos/rubi.webp";
-import rubiPrincipal from "../imagenes/productos/detalleProductos/rubi.webp";
+import rubiPrincipal from "../imagenes/productos/detalleProductos/rubiPrincipal.webp";
 import rubi2 from "../imagenes/productos/detalleProductos/rubi2.webp";
 import rubi3 from "../imagenes/productos/detalleProductos/rubi3.webp";
 
@@ -48,15 +48,13 @@ import galiaPrincipal from "../imagenes/productos/detalleProductos/galia.webp";
 import galia2 from "../imagenes/productos/detalleProductos/galia2.webp";
 import galia3 from "../imagenes/productos/detalleProductos/galia3.webp";
 
-import amor from "../imagenes/productos/detalleProductos/amor.webp";
-import amorPrincipal from "../imagenes/productos/detalleProductos/amor.webp";
+import amor from "../imagenes/productos/detalleProductos/amorPrincipal.webp";
+import amorPrincipal from "../imagenes/productos/detalleProductos/amorPrincipal.webp";
 import amor2 from "../imagenes/productos/detalleProductos/amor2.webp";
 import amor3 from "../imagenes/productos/detalleProductos/amor3.webp";
 
 export const productos = [
 
-  //PRODUCTOS DE VERANO
-  //ITEM 1 - BUSH AMOUR
   {
     id: 1,
     slug: "l_amor_box",
@@ -65,11 +63,11 @@ export const productos = [
     precio: "249.00",
     precioTachado: "269.00",
 
-    descripcionCorta: "Refinado, imponente y natural.",
+    descripcionCorta: "Perfecto para regalo formal, sofisticado y de gran presencia.",
     descripcionLarga:
-      `Inspirado en la suavidad y el encanto de los tonos románticos. Nuestro box Aura Rosa reúne la 
-      frescura de rosas y claveles seleccionados a mano, creando un diseño redondo, abundante y lleno de texturas únicas. 
-      Un diseño artesanal y la opción perfecta para sorprender con un obsequio inolvidable que llenará de vida y aroma cualquier espacio.`,
+      `Una presentación de gran impacto que destaca por su elegancia y orden. 
+       Este arreglo está compuesto por un domo compacto y abundante de rosas rojas seleccionadas por su tamaño y frescura. 
+       Viene presentado en nuestro box cilíndrico de color blanco Galiana, complementado con un lazo y un delicado collar de perlas.`,
 
     img: amor,
     imgPrincipal: amorPrincipal,
@@ -80,15 +78,17 @@ export const productos = [
     ],
 
     detalles: [
-      { label: "Estilo", value: "Elegante, regencia y romántico profundo." },
-      { label: "Flores principales", value: "Rosas rojas premium." },
-      { label: "Flores complementarias", value: "Eucalipto tipo dolar." },
-      { label: "Cantidad", value: "18 tallos." },
-      { label: "Altura aproximada", value: "63 cm." },
-      { label: "Diámetro aproximado", value: "65 cm." }
+      { label: "Estilo", value: "• Base 20X20 blanco Galiana." },
+      { label: "Flores principales", value: "• Altura 35 cm / puede variar ligeramente ." },
+      { label: "Flores complementarias", value: "• 40 Rosas rojas premium." },
+      { label: "Cantidad", value: "• Elegante decorativo collar de perlas que rodea la base." },
+      { label: "Altura aproximada", value: "•	Lazo de cinta borlón ." },
+      { label: "Diámetro aproximado", value: "•	Tarjeta de dedicatoria en sobre." },
+      { label: "Diámetro aproximado", value: "•	Agrega tu dedicatoria (hasta 250 caracteres)." },
+      { label: "Diámetro aproximado", value: "•	Imagen referencial, puede variar según disponibilidad y temporada." }
     ]
   },
-  //ITEM 2 - GRAND AMOUR
+
   {
     id: 2,
     slug: "corazon_ferrero",
@@ -108,9 +108,8 @@ export const productos = [
     imgPrincipal: corazonPrincipal,
 
     galeria: [
-      { src: corazonPrincipal },
       { src: corazon2 },
-      { src: corazon3, span: 2 },
+      { src: corazon3 },
     ],
 
     detalles: [
@@ -119,10 +118,14 @@ export const productos = [
       { label: "Flores complementarias", value: "•	Lazo decorativo fucsia." },
       { label: "Cantidad", value: "•	2 Gerberas ." },
       { label: "Altura aproximada", value: "•	Mix de claveles premium en tonos amarillo marmoleado, rosado y blanco (podría variar de acuerdo con disponibilidad)." },
-      { label: "Diámetro aproximado", value: "•	Follajes siempre viva." }
+      { label: "Diámetro aproximado", value: "•	Follajes siempre viva." },
+      { label: "Diámetro aproximado", value: "•	12 bombones Ferrero Rocher." },
+      { label: "Diámetro aproximado", value: "•	Tarjeta de dedicatoria en sobre" },
+      { label: "Diámetro aproximado", value: "•	Imagen referencial, puede variar según disponibilidad y temporada." }
+
     ]
   },
-  //ITEM 3 - ROUGE
+
   {
     id: 3,
     slug: "fantasy",
@@ -131,12 +134,12 @@ export const productos = [
     precio: "249.90",
     precioTachado: "269.90",
 
-    descripcionCorta: "Refinado, imponente y natural.",
+    descripcionCorta: "Perfecto para: Cumpleaños, celebraciones de hitos importantes, sorpresas de gran impacto",
     descripcionLarga:
-      `Hay momentos que merecen una celebración espectacular. 
-      Nuestro box premium fusiona la fuerza de las rosas vibrantes con la delicadeza de detalles florales que se elevan con elegancia. 
-      Acompañado de un globo que transmite tus mejores deseos, este diseño de autor no es solo un regalo, 
-      es una experiencia visual inolvidable hecha para emocionar.`,
+      `Hay momentos que merecen una celebración espectacular. Nuestro box premium fusiona
+       la fuerza de las rosas vibrantes con la delicadeza de detalles florales que se elevan con elegancia. 
+       Acompañado de un globo que transmite tus mejores deseos, este diseño de autor no es solo un regalo, 
+       es una experiencia visual inolvidable hecha para emocionar.`,
 
     img: fantasy,
     imgPrincipal: fantasy,
@@ -145,12 +148,15 @@ export const productos = [
     ],
 
     detalles: [
-      { label: "Estilo", value: "Elegante, regencia y romántico profundo." },
-      { label: "Flores principales", value: "Rosas rojas premium." },
-      { label: "Flores complementarias", value: "Eucalipto tipo dolar." },
-      { label: "Cantidad", value: "18 tallos." },
-      { label: "Altura aproximada", value: "63 cm." },
-      { label: "Diámetro aproximado", value: "65 cm." }
+      { label: "Estilo", value: "• Base 20X20 rosa perlada Galiana." },
+      { label: "Flores principales", value: "• Altura 66 cm / puede variar ligeramente." },
+      { label: "Flores complementarias", value: "• 16 rosas fucsia, 8 rosas rosada y 7 rosas blanca." },
+      { label: "Cantidad", value: "• Follaje fino de eucalipto y variedad de flor Delphiniums lila, podría variar de acuerdo con disponibilidad." },
+      { label: "Altura aproximada", value: "•	Globo “Happy Birthday” (personalizable)." },
+      { label: "Diámetro aproximado", value: "•	Tarjeta de dedicatoria en sobre." },
+      { label: "Diámetro aproximado", value: "•	Agrega tu dedicatoria (hasta 250 caracteres)." },
+      { label: "Diámetro aproximado", value: "•	Imagen referencial, puede variar según disponibilidad y temporada." },
+
     ]
   },
   {
@@ -161,11 +167,12 @@ export const productos = [
     precio: "159.90",
     precioTachado: "169.00",
 
-    descripcionCorta: "Refinado, imponente y natural.",
+    descripcionCorta: "Perfecto para transmitir optimismo, éxito, cariño y hacer brillar el día de alguien especial.",
     descripcionLarga:
-      `Inspirado en la suavidad y el encanto de los tonos románticos. Nuestro box Aura Rosa reúne la 
-      frescura de rosas y claveles seleccionados a mano, creando un diseño redondo, abundante y lleno de texturas únicas. 
-      Un diseño artesanal y la opción perfecta para sorprender con un obsequio inolvidable que llenará de vida y aroma cualquier espacio.`,
+      `Crea hermosos recuerdos con el regalo perfecto para celebrar la vida. 
+      Hay personas que iluminan nuestra vida y este arreglo está diseñado para ellas. 
+      Galia Sol captura la esencia vibrante de los girasoles más frescos, combinados sutilmente con finos minigirasoles
+      y el relajante aroma del eucalipto. Este diseño destaca por su lazo artesanal doble en cinta borlón y satén color perla. `,
 
     img: galia,
     imgPrincipal: galiaPrincipal,
@@ -176,12 +183,15 @@ export const productos = [
     ],
 
     detalles: [
-      { label: "Estilo", value: "Elegante, regencia y romántico profundo." },
-      { label: "Flores principales", value: "Rosas rojas premium." },
-      { label: "Flores complementarias", value: "Eucalipto tipo dolar." },
-      { label: "Cantidad", value: "18 tallos." },
-      { label: "Altura aproximada", value: "63 cm." },
-      { label: "Diámetro aproximado", value: "65 cm." }
+      { label: "Estilo", value: "• Base 20X20 perla Galiana." },
+      { label: "Flores principales", value: "• Altura 40 cm / puede variar ligeramente." },
+      { label: "Flores complementarias", value: "• 12 Girasoles premium." },
+      { label: "Cantidad", value: "• Acompañamiento variedad de minigirasoles." },
+      { label: "Altura aproximada", value: "•	Hojas frescas de eucalipto." },
+      { label: "Diámetro aproximado", value: "•	Lazo artesanal doble con cinta borlón y cinta satinada delgada en color perla ." },
+      { label: "Altura aproximada", value: "•	Tarjeta de dedicatoria en sobre." },
+      { label: "Altura aproximada", value: "•	Agrega tu dedicatoria (hasta 250 caracteres)." },
+      { label: "Altura aproximada", value: "•	Imagen referencial, puede variar según disponibilidad y temporada." },
     ]
   },
   {
@@ -192,11 +202,12 @@ export const productos = [
     precio: "179.90",
     precioTachado: "189.90",
 
-    descripcionCorta: "Refinado, imponente y natural.",
+    descripcionCorta: "Perfecto para: Expresar gratitud, amor o admiración hacia esa persona importante ",
     descripcionLarga:
-      `Inspirado en la suavidad y el encanto de los tonos románticos. Nuestro box Aura Rosa reúne la 
-      frescura de rosas y claveles seleccionados a mano, creando un diseño redondo, abundante y lleno de texturas únicas. 
-      Un diseño artesanal y la opción perfecta para sorprender con un obsequio inolvidable que llenará de vida y aroma cualquier espacio.`,
+      `Inspirado en la suavidad y el encanto de los tonos románticos. 
+      Nuestro box Aura Rosa reúne la frescura de rosas y claveles seleccionados a mano, 
+      creando un diseño redondo, abundante y lleno de texturas únicas. Un diseño artesanal y la opción 
+      perfecta para sorprender con un obsequio inolvidable que llenará de vida y aroma cualquier espacio.`,
 
     img: aura,
     imgPrincipal: auraPrincipal,
@@ -204,16 +215,20 @@ export const productos = [
     galeria: [
       { src: aura2 },
       { src: aura3 },
-      { src: aura3, span: 2 },
     ],
 
     detalles: [
-      { label: "Estilo", value: "Elegante, regencia y romántico profundo." },
-      { label: "Flores principales", value: "Rosas rojas premium." },
-      { label: "Flores complementarias", value: "Eucalipto tipo dolar." },
-      { label: "Cantidad", value: "18 tallos." },
-      { label: "Altura aproximada", value: "63 cm." },
-      { label: "Diámetro aproximado", value: "65 cm." }
+      { label: "Estilo", value: "• Base 15X15 rosado Galiana." },
+      { label: "Flores principales", value: "• Base 15X15 rosado Galiana." },
+      { label: "Flores complementarias", value: "• 14 clavelones amarillos marmoleados, puede variar según disponibilidad y temporada." },
+      { label: "Cantidad", value: "• 13 rosas premium en tono rosado." },
+      { label: "Altura aproximada", value: "•	7 rosas premium en tono fucsia." },
+      { label: "Diámetro aproximado", value: "•	Hojas frescas de eucalipto ." },
+      { label: "Diámetro aproximado", value: "•	Cinta borlón fucsia con diseño plisado en el contorno de la base." },
+      { label: "Diámetro aproximado", value: "•	Delicada mariposa decorativa." },
+      { label: "Diámetro aproximado", value: "•	Tarjeta de dedicatoria en sobre." },
+      { label: "Diámetro aproximado", value: "•	Agrega tu dedicatoria (hasta 250 caracteres)." },
+      { label: "Diámetro aproximado", value: "•	Imagen referencial, puede variar según disponibilidad y temporada." }
     ]
   },
   {
@@ -224,11 +239,12 @@ export const productos = [
     precio: "179.00",
     precioTachado: "185.00",
 
-    descripcionCorta: "Refinado, imponente y natural.",
+    descripcionCorta: "Perfecto para: Expresar afecto profundo, gratitud o celebrar un momento inolvidable.",
     descripcionLarga:
-      `Inspirado en la suavidad y el encanto de los tonos románticos. Nuestro box Aura Rosa reúne la 
-      frescura de rosas y claveles seleccionados a mano, creando un diseño redondo, abundante y lleno de texturas únicas. 
-      Un diseño artesanal y la opción perfecta para sorprender con un obsequio inolvidable que llenará de vida y aroma cualquier espacio.`,
+      `Sorprende con un detalle luminoso, fresco y sofisticado. 
+      Nuestro diseño Rubí Floral reúne la fuerza de las rosas rojas, la suavidad de las rosas rosadas y los claveles, 
+      enmarcados por el aroma natural del eucalipto. El diseño se corona con un elegante lazo doble en cintas satinadas roja y rosada, 
+      logrando el equilibrio perfecto entre sofisticado y tierno.`,
 
     img: rubi,
     imgPrincipal: rubiPrincipal,
@@ -239,12 +255,17 @@ export const productos = [
     ],
 
     detalles: [
-      { label: "Estilo", value: "Elegante, regencia y romántico profundo." },
-      { label: "Flores principales", value: "Rosas rojas premium." },
-      { label: "Flores complementarias", value: "Eucalipto tipo dolar." },
-      { label: "Cantidad", value: "18 tallos." },
-      { label: "Altura aproximada", value: "63 cm." },
-      { label: "Diámetro aproximado", value: "65 cm." }
+      { label: "Estilo", value: "• Base 15X15 blanco Galiana." },
+      { label: "Flores principales", value: "• Altura 38 cm / puede variar ligeramente." },
+      { label: "Flores complementarias", value: "• 12 rosas premium en tono rojo ." },
+      { label: "Cantidad", value: "• 3 rosas premium en tono rosado." },
+      { label: "Altura aproximada", value: "•	3 claveles en tono rojo." },
+      { label: "Diámetro aproximado", value: "•	10 claveles en tono rosado." },
+      { label: "Diámetro aproximado", value: "• Hojas frescas de eucalipto ." },
+      { label: "Diámetro aproximado", value: "•	Lazo rojo borlón en la tapa y cintas de satén en colores rojo y rosado." },
+      { label: "Diámetro aproximado", value: "•	Tarjeta de dedicatoria en sobre." },
+      { label: "Diámetro aproximado", value: "•	Agrega tu dedicatoria (hasta 250 caracteres)." },
+      { label: "Diámetro aproximado", value: "•	Imagen referencial, puede variar según disponibilidad y temporada." }
     ]
   },
   {
